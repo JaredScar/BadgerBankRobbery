@@ -52,13 +52,15 @@ Citizen.CreateThread(function()
 					if IsControlJustReleased(0, 38) then -- E key
 						TriggerServerEvent('BadgerBankRobbery:SetActive', true)
 						TriggerServerEvent('PrintBR:PrintMessage', bankcoords.alarm)
-						bankcoords.blip = AddBlipForCoord(bankcoords.x, bankcoords.y, bankcoords.z)
-						SetBlipSprite(bankcoords.blip, 353)
-						SetBlipFlashTimer(bankcoords.blip, 1000 * config.timeToRob)
-						SetBlipAsShortRange(bankcoords.blip, true)
-						BeginTextCommandSetBlipName("STRING")
-						AddTextComponentString(bankcoords.name)
-						EndTextCommandSetBlipName(bankcoords.blip)
+						if (config.displayBlips == true) then
+							bankcoords.blip = AddBlipForCoord(bankcoords.x, bankcoords.y, bankcoords.z)
+							SetBlipSprite(bankcoords.blip, 353)
+							SetBlipFlashTimer(bankcoords.blip, 1000 * config.timeToRob)
+							SetBlipAsShortRange(bankcoords.blip, true)
+							BeginTextCommandSetBlipName("STRING")
+							AddTextComponentString(bankcoords.name)
+							EndTextCommandSetBlipName(bankcoords.blip)
+						end
 						TriggerEvent("mythic_progbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
@@ -103,13 +105,15 @@ Citizen.CreateThread(function()
 					if IsControlJustReleased(0, 38) then -- E
 						TriggerServerEvent('PrintBR:PrintMessage', ammunationcoords.alarm)
 						TriggerServerEvent('BadgerBankRobbery:SetActive', true)
-						ammunationcoords.blip = AddBlipForCoord(ammunationcoords.x, ammunationcoords.y, ammunationcoords.z)
-						SetBlipSprite(ammunationcoords.blip, 353)
-						SetBlipFlashTimer(ammunationcoords.blip, 1000 * config.timeToRob)
-						SetBlipAsShortRange(ammunationcoords.blip, true)
-						BeginTextCommandSetBlipName("STRING")
-						AddTextComponentString(ammunationcoords.name)
-						EndTextCommandSetBlipName(ammunationcoords.blip)
+						if (config.displayBlips == true) then
+							ammunationcoords.blip = AddBlipForCoord(ammunationcoords.x, ammunationcoords.y, ammunationcoords.z)
+							SetBlipSprite(ammunationcoords.blip, 353)
+							SetBlipFlashTimer(ammunationcoords.blip, 1000 * config.timeToRob)
+							SetBlipAsShortRange(ammunationcoords.blip, true)
+							BeginTextCommandSetBlipName("STRING")
+							AddTextComponentString(ammunationcoords.name)
+							EndTextCommandSetBlipName(ammunationcoords.blip)
+						end
 						TriggerEvent("mythic_progbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
@@ -154,13 +158,15 @@ Citizen.CreateThread(function()
 					if IsControlJustReleased(0, 38) then -- E
 						TriggerServerEvent('PrintBR:PrintMessage', shopcoords.alarm)
 						TriggerServerEvent('BadgerBankRobbery:SetActive', true)
-						shopcoords.blip = AddBlipForCoord(shopcoords.x, shopcoords.y, shopcoords.z)
-						SetBlipSprite(shopcoords.blip, 353)
-						SetBlipFlashTimer(shopcoords.blip, 1000 * config.timeToRob)
-						SetBlipAsShortRange(shopcoords.blip, true)
-						BeginTextCommandSetBlipName("STRING")
-						AddTextComponentString(shopcoords.name)
-						EndTextCommandSetBlipName(shopcoords.blip)
+						if (config.displayBlips == true) then
+							shopcoords.blip = AddBlipForCoord(shopcoords.x, shopcoords.y, shopcoords.z)
+							SetBlipSprite(shopcoords.blip, 353)
+							SetBlipFlashTimer(shopcoords.blip, 1000 * config.timeToRob)
+							SetBlipAsShortRange(shopcoords.blip, true)
+							BeginTextCommandSetBlipName("STRING")
+							AddTextComponentString(shopcoords.name)
+							EndTextCommandSetBlipName(shopcoords.blip)
+						end
 						TriggerEvent("mythic_progbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
@@ -205,13 +211,15 @@ Citizen.CreateThread(function()
 					if IsControlJustReleased(0, 38) then -- E
 						TriggerServerEvent('PrintBR:PrintMessage', ltdcoords.alarm)
 						TriggerServerEvent('BadgerBankRobbery:SetActive', true)
-						ltdcoords.blip = AddBlipForCoord(ltdcoords.x, ltdcoords.y, ltdcoords.z)
-						SetBlipSprite(ltdcoords.blip, 353)
-						SetBlipFlashTimer(ltdcoords.blip, 1000 * config.timeToRob)
-						SetBlipAsShortRange(ltdcoords.blip, true)
-						BeginTextCommandSetBlipName("STRING")
-						AddTextComponentString(ltdcoords.name)
-						EndTextCommandSetBlipName(ltdcoords.blip)
+						if (config.displayBlips == true) then
+							ltdcoords.blip = AddBlipForCoord(ltdcoords.x, ltdcoords.y, ltdcoords.z)
+							SetBlipSprite(ltdcoords.blip, 353)
+							SetBlipFlashTimer(ltdcoords.blip, 1000 * config.timeToRob)
+							SetBlipAsShortRange(ltdcoords.blip, true)
+							BeginTextCommandSetBlipName("STRING")
+							AddTextComponentString(ltdcoords.name)
+							EndTextCommandSetBlipName(ltdcoords.blip)
+						end
 						TriggerEvent("mythic_progbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
