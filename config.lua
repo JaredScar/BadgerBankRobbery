@@ -11,16 +11,16 @@ config = {
 	enableLiquor = true, -- Enables all Liquor Stores to be robbed.
 
 	bankcoords = {
-		{name = "Paleto Bank", yeet = "Cunt", alarm = "^1^*A silent alarm has been triggered at the ^5Blaine County Savings Bank in Paleto Bay^1! All police units are required to assist!", 
+		{name = "Paleto Bank", alarm = "^1^*A silent alarm has been triggered at the ^5Blaine County Savings Bank in Paleto Bay^1! All police units are required to assist!", 
 		x = -104.42, y = 6476.56, z=32.51-1.7},
 
-		{name = "Harmony Bank", yeet = "Cunt", alarm = "^1^*A silent alarm has been triggered at the ^5Fleeca Bank Harmony in Harmony^1! All police units are required to assist!", 
+		{name = "Harmony Bank", alarm = "^1^*A silent alarm has been triggered at the ^5Fleeca Bank Harmony in Harmony^1! All police units are required to assist!", 
 		x = 1177.32, y = 2711.79, z = 38.1 - 1},
 
-		{name = "Banham Canyon Bank", yeet = "Cunt", alarm = "^1^*A silent alarm has been triggered at the ^5Bank in Banham Canyon^1! All police units are required to assist!", 
+		{name = "Banham Canyon Bank", alarm = "^1^*A silent alarm has been triggered at the ^5Bank in Banham Canyon^1! All police units are required to assist!", 
 		x = -2957.5, y = 480.97, z = 15.71 - 1},
 
-		{name = "Pillbox Hill Bank", yeet = "Cunt", alarm = "^1^*A silent alarm has been triggered at the ^5Bank in Pillbox Hill^1! All police units are required to assist!", 
+		{name = "Pillbox Hill Bank", alarm = "^1^*A silent alarm has been triggered at the ^5Bank in Pillbox Hill^1! All police units are required to assist!", 
 		x = 146.46, y = -1044.67, z = 29.38 - 1},
 	},
 
