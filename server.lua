@@ -19,7 +19,7 @@ RegisterNetEvent('BadgerBankRobbery:SetActive')
 AddEventHandler('BadgerBankRobbery:SetActive', function(bool)
 	robberyActive = bool
 	if bool then
-		Wait((1000 * 60 * 15)) -- Wait 15 minutes
+		Wait((1000 * 60 * config.robberyCooldown)) -- Wait 15 minutes
 		robberyActive = false
 	end
 end)
