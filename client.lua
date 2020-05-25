@@ -61,7 +61,7 @@ Citizen.CreateThread(function()
 							AddTextComponentString(bankcoords.name)
 							EndTextCommandSetBlipName(bankcoords.blip)
 						end
-						TriggerEvent("mythic_progbar:client:progress", {
+						TriggerEvent("mythic_progressbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
 							label = config.robbingStr,
@@ -114,7 +114,7 @@ Citizen.CreateThread(function()
 							AddTextComponentString(ammunationcoords.name)
 							EndTextCommandSetBlipName(ammunationcoords.blip)
 						end
-						TriggerEvent("mythic_progbar:client:progress", {
+						TriggerEvent("mythic_progressbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
 							label = config.robbingStr,
@@ -167,7 +167,7 @@ Citizen.CreateThread(function()
 							AddTextComponentString(shopcoords.name)
 							EndTextCommandSetBlipName(shopcoords.blip)
 						end
-						TriggerEvent("mythic_progbar:client:progress", {
+						TriggerEvent("mythic_progressbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
 							label = config.robbingStr,
@@ -220,7 +220,7 @@ Citizen.CreateThread(function()
 							AddTextComponentString(ltdcoords.name)
 							EndTextCommandSetBlipName(ltdcoords.blip)
 						end
-						TriggerEvent("mythic_progbar:client:progress", {
+						TriggerEvent("mythic_progressbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
 							label = config.robbingStr,
@@ -271,7 +271,7 @@ Citizen.CreateThread(function()
 						BeginTextCommandSetBlipName("STRING")
 						AddTextComponentString(liquorcoords.name)
 						EndTextCommandSetBlipName(liquorcoords.blip)
-						TriggerEvent("mythic_progbar:client:progress", {
+						TriggerEvent("mythic_progressbar:client:progress", {
 							name = "RobbingTheBank",
 							duration = (1000 * config.timeToRob), -- 1000ms * x seconds
 							label = config.robbingStr,
